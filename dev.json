@@ -1,0 +1,25 @@
+{
+    "version": 1,
+    "disable_existing_loggers": false,
+    "formatters": {
+        "default": {
+            "format": "[%(levelname)6s] [%(name)s] [%(funcName)s]: %(message)s"
+        }
+    },
+
+    "handlers": {
+        "console": {
+            "class": "logging.StreamHandler",
+            "level": "DEBUG",
+            "formatter": "default",
+            "stream": "ext://sys.stdout"
+        }
+    },
+
+    "loggers": {
+        "": {
+            "level": "DEBUG",
+            "handlers": ["console"]
+        }
+    }
+}
