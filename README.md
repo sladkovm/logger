@@ -17,7 +17,7 @@ def __init__(self)
     self.logger = logging.getLogger('module.ClassName')
 ```
 
-## Init logger in the top level script
+## Init logger in the top level script or Jupyter notebook
 ```
 import logging.config
 logger = logging.getLogger(__name__)
